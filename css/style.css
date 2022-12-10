@@ -1,0 +1,544 @@
+@font-face {
+  font-family: "Tajawal-Black";
+  src: url(Tajawal-Light.woff) format("woff");
+}
+
+* {
+  font-family: "Tajawal-Black", sans-serif !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+  direction: rtl;
+  margin: 0;
+  background: #e4ebf5;
+}
+header {
+  /*border: 1px solid #ccc;*/
+}
+
+header .naves {
+  height: 65px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(135deg,#2f88d6,#5933a2);;
+}
+span.title {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 26px;
+  background: -webkit-linear-gradient(45deg, #fff, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.admin {
+  width: 50px;
+  height: 50px;
+  margin-left: -40px;
+}
+.admin img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+}
+
+#search-form {
+  flex: 0.7;
+  height: 60%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 50;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#search-form input[type="search"] {
+  width: 100%;
+  border: 0;
+  border-left: 1px solid;
+  padding: 12px;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+main > h3 {
+  padding: 5px 10px;
+  margin: 10px auto auto;
+  color: #3a4de8;
+  border: 2px solid #ccccff;
+}
+
+main > h3 span {
+  margin: 5px;
+  color: #587ba7;
+  font-weight: normal;
+}
+main > h3 span a {
+  text-decoration: none;
+}
+main > h3 span a:visited,
+main > h3 span a {
+  color: #587ba7;
+}
+main .products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .products .product {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+main .products .product img {
+  width: 90%;
+  height: 67%;
+  margin: 5px;
+}
+
+main .products .product > span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 42%;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+main .products .product span:last-child {
+  margin: 2px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+main .products .product span:last-child img {
+  width: 25px;
+}
+main.main > p,
+main.main > h2 > p,
+main.main > .contact-us {
+  max-width: 720px;
+  text-align: justify;
+  margin: 10px auto;
+  font-size: 24px;
+  line-height: 1.8;
+  padding: 5px;
+  width: 98%;
+  text-align: center;
+}
+main.main > .contact-us > div {
+  padding: 20px 0;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+}
+main.main > p > span {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #ccc;
+  margin: 5px auto;
+  border-radius: 10px;
+}
+main .products .product p:not(.item .product p) ,
+main .products .product div.ditils {
+  display: none;
+  position: absolute;
+  background: white;
+  width: 240px;
+  margin: 141px 5px;
+  height: 150px;
+  text-align: right;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+main .products .product p img,
+main .products .product div.ditils img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+.login {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.login * {
+  box-sizing: border-box;
+}
+
+.login form,
+.add form {
+  padding: 20px;
+  margin: 5px auto;
+  border: 2px solid #086;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+.add form select,
+.login form input,
+.add form input {
+  width: 50%;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.login form label,
+.add form label {
+  width: 25%;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.naves > .basket {
+  padding: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  overflow: hidden;
+  width: 60px;
+  height: 50px;
+  margin: 5px;
+}
+.naves > .basket img {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  mix-blend-mode: darken;
+}
+span#payCount {
+  display: inline-block;
+  background: #7675d1;
+  min-width: 15px;
+  padding: 3px;
+  height: 10px;
+  position: relative;
+  z-index: 100;
+  top: -23px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+ul#basketItems,
+ul.payment {
+  width: 300px;
+  margin: 100px auto 10px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+ul#basketItems h2,
+ul.payment h2 {
+  text-align: center;
+}
+ul#basketItems li,
+ul.payment li {
+  font-weight: bold;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+}
+.act {
+  margin: 0 auto;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: fit-content;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.app main .products.item {
+  align-items: center;
+  flex-direction: column;
+}
+
+.app main .item .product {
+  height: max-content;
+  min-height: 625px;
+  width: 600px;
+}
+.app main .item .product p{
+  display: block;
+    text-align: right;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 3px;
+    margin: 5px 30px;
+    max-width: 80%;
+    padding: 10px;
+    text-align: justify;
+}
+.app main .item .product p >span:first-child{
+  display: inline-block;
+  width: 100%;
+  margin: 0 -5px 10px 0;
+}
+.app main  .item .product > span:not(:last-child) {
+  display: block;
+  border: 1px solid #ccc;
+  width: fit-content;
+  border-radius: 3px;
+  margin: 5px 30px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.app main  .item .product >  span:last-child {
+  margin: 15px;
+  width: fit-content;
+  padding: 5px 10px;
+}
+.app main  .item .product  span.tag
+{
+  font-weight: bold;
+}
+
+
+
+
+footer {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  background: #ccccff;
+}
+
+footer .pay-method {
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0 5px;
+}
+footer .pay-method h2 {
+  font-size: 58px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #3a4de8, #87cefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .pay-method span {
+  height: 100%;
+  width: 100px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+footer .pay-method img {
+  width: 100%;
+  height: 100%;
+}
+footer .pay-method .contact {
+  font-size: 58px;
+  font-weight: bold;
+  text-decoration: underline;
+  background: -webkit-linear-gradient(45deg, #3a4de8, #87cefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #4585ef;
+  line-height: 1;
+}
+
+footer .copy-write {
+  font-weight: bold;
+  border-top: 1px solid #e2ebf5;
+  text-align: center;
+  padding: 10px;
+}
+
+.manege > div:nth-child(1),
+.manege > div:nth-child(2),
+.manege > div:nth-child(3),
+.manege > div:nth-child(4),
+.manege > div:nth-child(5) {
+  padding: 15px 30px;
+  margin: 5px auto;
+  border: 2px solid #ccccff;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 200px;
+  font-size: 22px;
+  text-align: center;
+  color: #3a4de8;
+  font-weight: bold;
+  background-color: #ccccff;
+}
+.manege table {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+.manege table {
+  padding: 20px;
+  margin: 10px auto;
+  border: 2px solid #ccccff;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+.manege table thead {
+  background: #ccccff;
+  color: #3a4de8;
+  padding: 5px;
+  font-size: 18px;
+}
+.manege table tr,
+.manege table td {
+  border-bottom: 1px solid #ccccff;
+  padding: 0 10px;
+}
+.manege table td * {
+  height: 40px;
+}
+.manege td img {
+  height: 50px;
+  width: 70px;
+}
+
+.manege form select,
+.login form input,
+.manege form input {
+  width: 50%;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.login form label,
+.manege form label {
+  width: 33%;
+  display: inline-block;
+  margin: 10px 0;
+  text-align: right;
+  font-weight: bold;
+}
+.login form button ,
+  .manege form button {
+  border: 1px solid #ccccff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.login form,
+.manege form {
+  padding: 20px;
+  margin: 5px auto;
+  border: 2px solid #ccccff;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+}
+
+.receipt {
+  display: none;
+  padding: 20px;
+  margin: 10px auto 10px;
+  border: 2px solid #ccccff;
+  max-width: 350px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.receipt thead {
+  border-radius: 10px 10px 0px 0px;
+}
+.receipt h2 {
+  margin-block-end: 0px;
+  text-align: center;
+}
+.receipt h4 {
+  margin-block-start:10px;
+  text-align: center;
+}
+
+.receipt tr {
+  padding: 5px 10px;
+  margin: 5px;
+}
+.receipt td {
+  padding: 5px 10px;
+  text-align: right;
+  border: 2px solid #ccccff;
+
+}
+div.print {
+  padding: 4px 20px;
+  margin: 0px auto;
+  width: max-content;
+  border: 2px solid #ccccff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+@media (max-width: 920px) {
+  .admin {
+    margin-left: 0;
+  }
+  #search-form {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-top: 120px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+  .search-form {
+  }
+  .main {
+    padding-top: 50px;
+  }
+  footer .pay-method {
+    height: unset;
+    flex-direction: column;
+  }
+}
+
+
+@media print {
+
+  header {
+    display: none;
+  }
+
+  main *:not(.receipt):not(.receipt *) {
+    display: none;
+  }
+
+}
